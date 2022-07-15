@@ -1,11 +1,10 @@
 package com.example.crud.service;
 
-import com.example.crud.entity.Product;
+import com.example.crud.domain.Product;
 import com.example.crud.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.List;
 
 
@@ -47,6 +46,4 @@ public class ProductService {
         repository.deleteById(id);
         return "product removed!!";
     }
-
-
 }
